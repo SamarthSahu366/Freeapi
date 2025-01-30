@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import "../css/Addnewitem.css"
+import "../css/AddNewItem.css"
 
 interface ItemType {
     id: string;

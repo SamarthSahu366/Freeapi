@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/item.css"
+import "../css/Item.css"
 import { ItemType } from "../pages/Home";
 interface ItemProps {
   data: ItemType[];
