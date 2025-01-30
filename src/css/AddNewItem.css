@@ -1,0 +1,117 @@
+/* Add Item Form Container */
+.add-item-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.add-item-form:hover {
+  transform: translateY(-5px);
+}
+
+/* Input Fields */
+.input-field {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4d90fe;
+}
+
+/* Add Item Button */
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.add-button:active {
+  background-color: #388e3c;
+}
+
+/* Placeholder Styling for Inputs */
+.input-field::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Item Card Container (for displaying data) */
+.item-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensures content doesn't overflow out of the card */
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Handling Overflow Text */
+.item-card ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px; /* Prevents items from going outside the card */
+  overflow-y: auto; /* Adds a scrollbar if the list gets too long */
+}
+
+.item-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  word-wrap: break-word; /* Breaks long words to prevent overflow */
+  text-overflow: ellipsis; /* Adds "..." for text that overflows */
+  overflow: hidden; /* Prevents text from overflowing */
+}
+
+/* Button Styling */
+.delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
+
+/* Centering Text for the "Loading" and "Error" Messages */
+.loading, .error {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}

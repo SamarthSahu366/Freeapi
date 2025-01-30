@@ -1,0 +1,51 @@
+/* General Container Styling */
+.container {
+    background-color: #f4f4f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  /* Individual Item Card Styling */
+  .item-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* List Item Styling */
+  .item-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item-card li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Button Styling */
+  .delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #e60000;
+  }
+  
